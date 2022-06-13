@@ -1,0 +1,59 @@
+body {
+    background-color: #FFFF99;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+.main-div {
+    width: 80%;
+    max-width: 750px;
+    /* Setting margin-left and margin-right to auto centers our main-div class. */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-div,
+.sidebar-div {
+    overflow: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.sidebar-div {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+    .sidebar-div {
+        width: 80%;
+        max-width: 750px;
+        height: auto;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*
+     * This is commented out because currently I have no links in the sidebar.
+     *
+     * .sidebar-div a {
+     *     float: left;
+     * }
+     */
+}
+
+@media screen and (max-width: 400px) {
+    /* .sidebar-div a {
+     *   text-align: center;
+     *   float: none;
+   } */
+}
