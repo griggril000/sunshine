@@ -17,23 +17,39 @@ p {
 }
 
 .main-div,
-.sidebar-div {
+.menu,
+.sidebar {
     overflow: auto;
     background-color: white;
     padding: 20px;
 }
 
-.sidebar-div {
+.menu,
+.sidebar {
     height: 100%;
     width: 150px;
     position: fixed;
-    top: 0;
-    right: 0;
     padding: 20px;
 }
 
+.menu {
+    top: 0;
+    left: 0;
+}
+
+.menu a {
+    display: block;
+}
+
+.sidebar {
+    top: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 1160px) {
-    .sidebar-div {
+
+    .menu,
+    .sidebar {
         width: 80%;
         max-width: 750px;
         height: auto;
@@ -41,19 +57,11 @@ p {
         margin-left: auto;
         margin-right: auto;
     }
-
-    /*
-     * This is commented out because currently I have no links in the sidebar.
-     *
-     * .sidebar-div a {
-     *     float: left;
-     * }
-     */
 }
 
-@media screen and (max-width: 400px) {
-    /* .sidebar-div a {
-     *   text-align: center;
-     *   float: none;
-   } */
+@media screen and (max-width: 1159px) {
+    .menu a {
+        text-align: center;
+        display: inline;
+    }
 }
