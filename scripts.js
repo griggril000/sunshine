@@ -5,4 +5,4 @@
 function genQuote() { var randNum = Math.floor(Math.random() * 1) + 1; document.getElementById('quote').innerHTML = quotes[randNum];}
 
 //quote array
-var quotes = ["Filler", "\"Today is the day to decide to follow the Lord Jesus Christ.\"<br> - Eduardo Gavarret",];
+var quotes = ["Filler", "\"What sunshine is to flowers, smiles are to humanity. These are but trifles, to be sure; but scattered along life's pathway, the good they do is inconceivable.\"<br> - Joseph Addison",];
